@@ -47,12 +47,12 @@ function linkedListGenerator(){
     if(tail !== null) {
 
       _getTail().next = newNode;
-      _tail = newNode;
+      //_tail = newNode;
 
     } else {
 
       _head = newNode;
-      _tail = newNode;
+      //_tail = newNode;
     };
 
     return newNode;
@@ -103,7 +103,7 @@ function linkedListGenerator(){
             previousNode.next = null;
           };
 
-          _tail = previousNode;
+          //_tail = previousNode;
         };
 
         if(previousNode !== null) {
@@ -150,7 +150,7 @@ function linkedListGenerator(){
           return newNode;
         };
 
-        if(node === _tail) { //insert at tail
+        if(node === _getTail) { //insert at tail
 
           //console.log("inserting " +newNode + " at tail");
 
